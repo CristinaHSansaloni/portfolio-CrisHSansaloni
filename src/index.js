@@ -1,8 +1,7 @@
-// Fichero src/index.js (código nuevo)
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
+import './styles/App.css';
 
 import {HashRouter} from 'react-router-dom';
 
