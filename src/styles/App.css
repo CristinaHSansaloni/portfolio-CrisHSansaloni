@@ -63,7 +63,7 @@ section > h2 {
     margin-bottom: 3rem;
 }
 .text-light {
-    color: var(--botton-light);
+    color: var(--botton-dark);
 }
 a {
     color: #866f5a;
@@ -99,5 +99,26 @@ img {
     object-fit: cover;
 }
 
-/* ===== MEDIA QIERIES (MEDIUM) ===== */
+/* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+}
+
 
