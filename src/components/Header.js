@@ -1,11 +1,10 @@
 import { Canvas } from '@react-three/fiber';
 import React from 'react';
 import '../styles/header.css';
-import CTA from './CTA';
-
 import { OrbitControls } from '@react-three/drei';
 import Sphere from './AnimatedSphere';
 import { Suspense } from 'react';
+import HeaderSocials from './HeaderSocials';
 
 
 const Header = () => {
@@ -15,16 +14,17 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1 className='text-light'>Cris Sansaloni</h1>
         <h2>Frontend Developer</h2>
-        <Canvas>
+        <Canvas className='canvas'>
           <OrbitControls enableZomm={false} />
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[-2, 5, 2]} intensity={2} />
+          <ambientLight intensity={0.6} />
+          <directionalLight position={[-3, 6, 3]} intensity={2} />
           <Suspense fallback={null}>
             <Sphere />
           </Suspense>
         </Canvas>
-        <CTA />
-        <a href='#About' className='scroll__down'>Scroll Down</a>
+        
+        <HeaderSocials />
+        
       </div>
     </header>
   )
