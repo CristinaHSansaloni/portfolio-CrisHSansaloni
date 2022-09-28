@@ -3,7 +3,7 @@ nav {
     align-items: center;
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
+    /*padding: 0.7rem 1.7rem;*/
     z-index: 2;
     position: fixed;
     left: 90%;
@@ -12,7 +12,7 @@ nav {
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     
 }
 nav a {
@@ -35,3 +35,12 @@ nav::after {
     height: 2rem;
     background: var(--botton-dark);
 }
+
+/* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
+@media screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+
