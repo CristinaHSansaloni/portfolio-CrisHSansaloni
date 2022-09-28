@@ -81,16 +81,16 @@ a:hover {
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--botton-dark);
+    border: 1px solid var(--botton-light);
     transition: var(--transition);
 }
 .btn:hover {
-    background: var(--botton-light);
-    color: var(--grey-dark);
+    background: var(--botton-dark);
+    color: var(--color-white);
     border-color: transparent;
 }
 .btn-primary {
-    background: var(--botton-dark);
+    background: var(--botton-light);
     color: var(--grey-dark);
 }
 
