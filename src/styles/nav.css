@@ -27,7 +27,7 @@ nav a:hover {
 }
 nav a.active {
     border: solid 1px var(--botton-dark);
-    color: var(--botton-dark);
+    color: var(--botton-light);
 }
 nav::after {
     content: "";

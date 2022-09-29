@@ -5,30 +5,39 @@
 }
 .portfolio__item {
     background: var(--color-grey);
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
     
+    
 }
 .portfolio__item:hover {
     background: transparent;
-    /*border-color: var(--grey-medium);*/
     box-shadow: 5px 10px 10px -6px grey;
 }
 .portfolio__item-image {
     overflow: hidden;
-    height: 16rem;
+    height: 14rem;
 }
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 1.2rem;
+    text-align: center;
 }
 
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    
 }
+.portfolio__item-cta a {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 7rem;
+    height: 3rem;
+}
+
 
 /* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
 @media screen and (max-width: 1024px) {
