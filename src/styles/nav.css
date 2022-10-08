@@ -35,12 +35,48 @@ nav::after {
     height: 2rem;
     background: var(--botton-dark);
 }
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--botton-dark);
+    font-size: 1.3rem;
+    visibility: hidden;
+    opacity: 0;
+}
 
 /* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
 @media screen and (max-width: 1024px) {
     nav {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background: white;
+        border-radius: 0;
+        transition: 1s;
+        transform: translateY(-100vh);
     }
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        left: 90%;
+        transform: translateX(-50%);
+        top: 2rem;
+        font-size: 1.6rem;
+    }
+    header .responsive_nav {
+        transform: none;
+    }
+
 }
 
 
